@@ -1,6 +1,6 @@
-From dd19be5de7ed58cf125b38015d44efbe4774dba7 Mon Sep 17 00:00:00 2001
+From 1eb996948a4d53d8564b06cf482365ee968d8059 Mon Sep 17 00:00:00 2001
 From: Attila Gluck <gluck.attila.bela@gmail.com>
-Date: Sat, 29 Aug 2020 13:46:26 +0200
+Date: Sat, 29 Aug 2020 14:01:39 +0200
 Subject: [PATCH 2/2] dwm-statuscolors
 
 ---
@@ -33,7 +33,7 @@ index dc4efb7..4af53d2 100644
  
  /* tagging */
 diff --git a/dwm.c b/dwm.c
-index dde1abb..920ca1a 100644
+index dde1abb..1201ea6 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -59,7 +59,7 @@
@@ -66,7 +66,7 @@ index dde1abb..920ca1a 100644
 +			if ((unsigned int)*ts > LENGTH(colors)) { ts++; continue ; }
 +			ctmp = *ts;
 +			*ts = '\0';
-+			drw_text(drw, m->ww - sw + tx, 0, sw - tx, bh, 0, tp, 0);
++			drw_text(drw, m->ww - tw + tx, 0, tw - tx, bh, 0, tp, 0);
 +			tx += TEXTW(tp) -lrpad;
 +			if (ctmp == '\0') { break; }
 +			drw_setscheme(drw, scheme[(unsigned int)(ctmp-1)]);

@@ -1,7 +1,7 @@
-From 71bee6747aecc6160ffb189ff1e19dede44aa04a Mon Sep 17 00:00:00 2001
+From 4e7efb95853f2f2cabeb84aa7288d5528f8e3905 Mon Sep 17 00:00:00 2001
 From: Attila Gluck <gluck.attila.bela@gmail.com>
 Date: Tue, 25 Aug 2020 09:25:11 +0200
-Subject: [PATCH] dwm-statuscmd-signal
+Subject: [PATCH 1/2] dwm-statuscmd-signal
 
 ---
  config.def.h |  5 +++-
